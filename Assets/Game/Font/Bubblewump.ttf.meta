@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b0c715a30f2fb4f4cb1a0188999b71a1
+timeCreated: 1531648152
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bubblewump
+  fontNames:
+  - Bubblewump
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

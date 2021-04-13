@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0067d2634face054b9c6fbce37bc969d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Splatch
+  fontNames:
+  - Splatch
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: adfc385cffe39ac498fd1f54dc8cae4b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
