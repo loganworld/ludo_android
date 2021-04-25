@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Scene/splash.unity
+    path: Assets/Game/Scenes/splash.unity
     guid: a33a07d8edd44bf4e80a379c92b0fd67
   - enabled: 1
-    path: Assets/Game/Scene/main.unity
+    path: Assets/Game/Scenes/main.unity
     guid: 7b324174d7d758846ad118b895c31a81
   - enabled: 1
-    path: Assets/Game/Scene/game.unity
+    path: Assets/Game/Scenes/game.unity
     guid: bb67e9ab3a4908643a355feaf2241acc
   - enabled: 1
-    path: Assets/Game/Scene/multiplayer.unity
+    path: Assets/Game/Scenes/multiplayer.unity
     guid: 249cf669c5de59e4c85c7e9f6ded16b8
   m_configObjects: {}

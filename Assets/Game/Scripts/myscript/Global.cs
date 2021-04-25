@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System;
+
 public class Global
 {
     /*********** WegGL *********************/
@@ -17,15 +19,19 @@ public class Global
     public static bool SSL_ENALBLED = false;
     /***************************************/
 
-    public static bool isTesting = true;
+    public static bool isTesting = false;
 
     public static int testingPort = 3002;
     public static string testingDomain = "localhost";
 
 
+
     public static string currentDomain = "";
 
+    public static string betAmount = "0";
+
     public static float balance = 0;
+    public static int minAmount = 10;
 
     public static bool socketConnected;
     public static bool mainPlayer;
@@ -103,5 +109,26 @@ public class SaveData
         turn = -1;
         initial = false;
         positions = new List<int>();
+    }
+}
+
+[Serializable] 
+public class BetInfo
+{
+    public long id;
+    public float amount;
+
+    public BetInfo()
+    {
+        if (Global.m_user != null)
+        {
+            id = Global.m_user.id;
+        }
+        amount = float.Parse(Global.betAmount);
+    }
+
+    public static BetInfo CreateFromJSON(string data)
+    {
+        return JsonUtility.FromJson<BetInfo>(data);
     }
 }

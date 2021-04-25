@@ -68,6 +68,7 @@ namespace UnitySocketIO
 
             On("connected", Connected);
 
+            Connect();
 
             StartCoroutine(iReconnect());
         }
@@ -75,7 +76,7 @@ namespace UnitySocketIO
         IEnumerator iReconnect()
         {
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(2f);
 
             if (Global.socketConnected)
             {
@@ -85,7 +86,7 @@ namespace UnitySocketIO
 
             Debug.Log("*******Socket Connecting...");
             Connect();
-            // StartCoroutine(iReconnect());
+            StartCoroutine(iReconnect());
         }
         private void Connected(SocketIOEvent obj)
         {
